@@ -20,6 +20,8 @@ local Student(name="Иванов И.И.", group="ИКБО-4-20", age="19") = {
   ] 
 }
 ```
+<img width="817" alt="image" src="https://github.com/user-attachments/assets/02340d2a-59ea-4703-abd3-9d06fda05fb8">
+
 
 Задание 2:
 
@@ -39,27 +41,42 @@ in  { groups = groups,
     , subject = "Конфигурационное управление"
  }
 ```
+<img width="983" alt="image" src="https://github.com/user-attachments/assets/6b3f9bb7-ca3f-4f80-a923-22cb034f0a1a">
 
 Задание 3
 
 ```
 BNF = '''
-E = 10 | 100 | 11 | 101101 | 000
+E = Digit | E Digit
+Digit = 0 | 1
 '''
 ```
+
+<img width="983" alt="image" src="https://github.com/user-attachments/assets/e130533f-7097-402c-9ec9-4b9114d682a9">
 
 Задание 4:
 
 ```
 BNF = '''
-E = "()" | "{}" | E E | "(" E ")" | "{" E "}"
+E = Pair | E Pair
+Pair = ( E ) | { E } | ( ) | { }
 '''
 ```
+
+<img width="983" alt="image" src="https://github.com/user-attachments/assets/bc18a830-18f8-42a9-bf5f-9f221648e448">
+
 
 Задание 5:
 
 ```
-BNF = '''
-E = "~" E | E "&" E | E "|" E | "(" E ")" | "x" | "y"
+BNF = ''' 
+E = T EPrime 
+EPrime = Op T EPrime |  
+T = ~ T | ( E ) | Var 
+Op = & | | 
+Var = x | y 
 '''
 ```
+
+![image](https://github.com/user-attachments/assets/9201ea98-9121-4ff6-ba01-3a75aaaa73a9)
+
