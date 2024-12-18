@@ -15,3 +15,5 @@
 запуск dependency_visualizer.py: python dependency_visualizer.py alpine-base
 
 запуск тестов: python test_dependency_visualizer.py
+
+Важно! Для запуска необходимо установить graphiz
