@@ -1,0 +1,21 @@
+<config>
+  <const name="size">-99</const>
+  <const name="sizeplus"><expr>|size 1 -|</expr></const>
+  <const name="sizeabs"><expr>|size abs|</expr></const>
+  <array>
+    <value>
+      <array>
+        <value>3</value>
+        <value>3</value>
+      </array>
+    </value>
+    <value>2</value>
+    <value><string>string</string></value>
+  </array>
+  <comment type="line">Это однострочный комментарий</comment>
+  <comment type="multi">
+    Это
+    многострочный
+    комментарий
+  </comment>
+</config>
